@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Sarapan Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daftar Sarapan Karyawan</h1>
+    <form id="breakfastForm">
+        <input type="text" id="name" placeholder="Nama Karyawan" required>
+        <select id="menu" required>
+            <option value="" disabled selected>Pilih Menu Sarapan</option>
+            <option value="Nasi Goreng">Nasi Goreng</option>
+            <option value="Mie Goreng">Mie Goreng</option>
+            <option value="Roti Bakar">Roti Bakar</option>
+            <option value="Bubur Ayam">Bubur Ayam</option>
+            <option value="Soto Ayam">Soto Ayam</option>
+            <option value="Lontong Sayur">Lontong Sayur</option>
+        </select>
+        <input type="text" id="quantity" placeholder="Kuantitas (contoh: 0.5)" required>
+        <input type="text" id="notes" placeholder="Catatan (opsional)">
+        <button type="submit">Tambah</button>
+    </form>
+    <div id="groupedBreakfastList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
